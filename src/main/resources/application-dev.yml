@@ -1,0 +1,21 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/yourdb
+#    username: root
+#    password: gopal
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+# Default H2 database configuration
+spring:
+  datasource:
+    url:jdbc: h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+
+# JPA properties
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate.ddl-auto: none
